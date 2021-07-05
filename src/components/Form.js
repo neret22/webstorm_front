@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import {useDispatch} from "react-redux"
-
+import {ADD_PERSON} from "../store/actionList"
 
 const initPerson = {
     name: '',
@@ -21,7 +21,7 @@ const Form = () => {
 
     const submitHandle = event =>{
         event.preventDefault()
-        dispatch({type: "ADD_PERSON", payload: {id: Date.now(), ...person}})
+        dispatch({type: ADD_PERSON, payload: {id: Date.now(), ...person}})
         setPerson(initPerson)
     }
 
@@ -94,4 +94,4 @@ const Form = () => {
 export default Form
 
 
-//// вывод новых персон в один лист
+//// вывод новых персон в один лист, красивый))

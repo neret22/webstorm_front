@@ -1,6 +1,7 @@
 import React, {Fragment} from 'react'
-import Header from "./components/Header";
-import Form from "./components/Form";
+import Header from "./Header";
+import Form from "./Form";
+import Book from "./Book"
 
 
 
@@ -12,6 +13,7 @@ const App = () => {
         <Fragment>
             <Header/>
             <Form />
+            <Book />
         </Fragment>
     )
 }
